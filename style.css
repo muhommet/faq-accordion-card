@@ -1,0 +1,153 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 12px;
+  background-image: linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+}
+.project-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 27%;
+}
+.card {
+  align-self: center;
+  width: 375px;
+  height: auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  z-index: 0;
+  margin-top: 215px;
+}
+
+#img-mobile {
+  position: absolute;
+  align-self: center;
+  top: 105px;
+  width: 250px;
+}
+#img-shadow-mobile {
+  position: absolute;
+  align-self: center;
+  top: 210px;
+  width: 250px;
+}
+.faq {
+  margin-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+.qst {
+  margin-bottom: 20px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.232);
+  color: hsl(238, 29%, 16%);
+  opacity: 0.8;
+  border-radius: 5px;
+  padding: 5px 5px 0px 5px;
+}
+.question {
+  margin-bottom: 5px;
+}
+.question-with-arrow {
+  display: flex;
+  justify-content: space-between;
+}
+.arrow {
+  height: 8px;
+}
+.answer {
+  margin-right: 15%;
+  margin-bottom: 10px;
+}
+
+#woman {
+  display: none;
+}
+
+/* 
+==================================
+buttons
+==================================
+*/
+.qst:hover {
+  cursor: pointer;
+  background-color: rgba(128, 128, 128, 0.123);
+  transition: 0.3s;
+}
+#ar5:hover {
+  cursor: pointer;
+}
+.bold {
+  font-weight: 700;
+}
+.rotate180 {
+  transform: rotate(180deg);
+}
+.hidden1,
+.hidden2,
+.hidden3,
+.hidden4,
+.hidden5 {
+  display: none;
+}
+/* 
+==================================
+BREAKPOINTS
+==================================
+*/
+@media (min-width: 720px) {
+  .project-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .card {
+    max-width: 650px;
+    min-width: 650px;
+    height: auto;
+    position: relative;
+    background-image: url(/images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 215% 70%;
+  }
+  .faq {
+    margin-top: 20px;
+    margin-right: 40px;
+    margin-left: 300px;
+  }
+  h1 {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .arrow {
+    margin-left: 30px;
+  }
+  .answer {
+    margin-right: 30px;
+    margin-bottom: 10px;
+  }
+  #img-mobile {
+    display: none;
+  }
+  #img-shadow-mobile {
+    display: none;
+  }
+  #woman {
+    display: block;
+    position: absolute;
+    width: 350px;
+    height: 250px;
+    right: 55%;
+    top: 20%;
+  }
+}
